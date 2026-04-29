@@ -62,8 +62,8 @@ def build_parser() -> argparse.ArgumentParser:
                    help="Smoothness term weight (larger = smoother).")
     p.add_argument("--resize", type=int, default=None,
                    help="Optional: resize longest side to this many pixels (speeds up).")
-    p.add_argument("--solver", choices=["ek", "bk"], default="ek",
-                   help="Max-flow solver: 'ek' = Edmonds-Karp, 'bk' = Boykov-Kolmogorov.")
+    p.add_argument("--solver", choices=["ek", "dinic", "bk"], default="ek",
+                   help="Max-flow solver: 'ek' = Edmonds-Karp, 'dinic' = Dinic's, 'bk' = Boykov-Kolmogorov.")
     p.add_argument("--invert-gt", action="store_true",
                    help="Invert GT mask (if foreground is 0 instead of 255).")
     p.add_argument("--seed", type=int, default=42)

@@ -10,9 +10,10 @@ from .fcm import run_fcm, resolve_obj_bg_from_seeds
 from .graph import build_graph
 from .maxflow import Graph as EKGraph
 from .bk import Graph as BKGraph
+from .maxflow_dinic import Graph as DinicGraph
 
 
-SOLVERS = {"ek": EKGraph, "bk": BKGraph}
+SOLVERS = {"ek": EKGraph, "dinic": DinicGraph, "bk": BKGraph}
 
 
 @dataclass
