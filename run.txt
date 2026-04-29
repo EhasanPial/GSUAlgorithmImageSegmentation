@@ -1,0 +1,2 @@
+python -m fcm_graphcut.draw_seeds --image fcm_graphcut/samples/men1.jpg --out fcm_graphcut/my_seeds/men1 --resize 200
+python -m fcm_graphcut.cli --image fcm_graphcut/samples/men1.jpg --out fcm_graphcut/outputs/men1 --solver bk --fg-mask fcm_graphcut\my_seeds\men1\fg_mask.png --bg-mask fcm_graphcut\my_seeds\men1\bg_mask.png --resize 200
